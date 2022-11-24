@@ -1,49 +1,30 @@
 package PhoneBook;
 
 public class Person {
-    private String name;
-    private String address;
-    private String state;
-    private int zipCode;
+    private String firstName;
+    private String lastName;
 
-    public Person(String name, String address, String state, int zipCode) {
+    public Person(String firstName, String lastName) {
         super();
-        this.name = name;
-        this.address = address;
-        this.state = state;
-        this.zipCode = zipCode;
+        this.firstName = firstName;
+        this.lastName = lastName;
+
     }
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getAddress() {
-        return address;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
-    }
-
-    public int getZipCode() {
-        return zipCode;
-    }
-
-    public void setZipCode(int zipCode) {
-        this.zipCode = zipCode;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
 }
