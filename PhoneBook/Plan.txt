@@ -1,0 +1,7 @@
+
+
+create a Person class and a Address class
+-build Person class and build Address class with all its attributes
+-create an interface for appearance of the options to be selected 
+-code an option to quit the program
+-code an option to select which functions run
