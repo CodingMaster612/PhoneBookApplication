@@ -75,9 +75,15 @@ public class Display {
                         + " ," + zip + ", " + number);
             } else if (directions.equals("Search")) {
                 Scanner scanner = new Scanner(System.in);
-                System.out.println("Enter Name to search: ");
+                Person person = new Person();
+                System.out.println("Enter First Name to search: ");
+                String First = scanner.nextLine();
+                System.out.println("Enter Last Name to search: ");
+                String Last = scanner.nextLine();
+                person.setFirstName(First);
+                person.setLastName(Last);
 
-                String name = scanner.nextLine();
+                System.out.println(person.toString());
 
             } else if (directions.equals("delete")) {
                 Scanner delete = new Scanner(System.in);
