@@ -1,10 +1,14 @@
 package PhoneBook;
 
+import java.util.ArrayList;
+
+import java.util.List;
 import java.util.Scanner;
 
 public class Display {
     public static void main(String[] args) {
-        String directions, src;
+        String directions;
+        List<String> names = new ArrayList<>();
 
         while (true) {
             Scanner console = new Scanner(System.in);
@@ -28,12 +32,48 @@ public class Display {
                 System.out.println("Program Terminated");
                 break;
             }
-            // if (!directions.equals("q")) {
-            // continue;
-            // }
 
-            if (directions.equals("add")) {
-                System.out.println("test");
+            if (directions.equals("Add")) {
+                // add a while loop
+                Scanner con = new Scanner(System.in);
+
+                System.out.println("Enter a name");
+                String name = con.nextLine();
+
+                names.add(name);
+
+                System.out.println("Enter a last name");
+                String lastName = con.nextLine();
+
+                names.add(lastName);
+
+            }
+            if (directions.equals("Search")) {
+                // function to search
+                firstName First = new firstName();
+                lastName Last = new lastName();
+                FullName Full = new FullName();
+                First.SearchForFirst();
+                Last.SearchForLast();
+                Full.SearchForFullName();
+
+                City city = new City();
+                Statement state = new Statement();
+                state.SearchForState();
+                city.SearchForCity();
+
+            }
+            if (directions.equals("delete")) {
+                // function to delete
+            }
+            if (directions.equals("update")) {
+                // function to update
+            }
+            if (directions.equals("Show")) {
+                // function to Show
+                for (int i = 0; i < names.size(); i++) {
+                    System.out.println(names.get(i));
+                }
             }
 
         }
