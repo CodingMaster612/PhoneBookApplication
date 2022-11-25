@@ -95,7 +95,15 @@ public class Display {
 
             }
             if (directions.equals("delete")) {
-                // function to delete
+                Scanner delete = new Scanner(System.in);
+                System.out.println("Choose what element to delete");
+                String item = delete.nextLine();
+
+                for (int i = 0; i < Objects.size(); i++) {
+
+                    Objects.remove(item);
+
+                }
 
             }
             if (directions.equals("update")) {
