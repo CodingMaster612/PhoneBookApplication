@@ -1,6 +1,5 @@
 package PhoneBook;
 
-import java.rmi.server.SocketSecurityException;
 import java.util.ArrayList;
 
 import java.util.List;
@@ -36,7 +35,7 @@ public class Display {
                 break;
             }
 
-            if (directions.equals("Add")) {
+            else if (directions.equals("Add")) {
                 // add a while loop
                 Scanner con = new Scanner(System.in);
 
@@ -74,30 +73,13 @@ public class Display {
                 // System.out.println("Full name, city, state, zip , Phone");
                 Objects.add(name + " ," + lastName + ", " + city + ", " + state
                         + " ," + zip + ", " + number);
-            }
-            if (directions.equals("Search")) {
-                // add scanner
-                Scanner scan = new Scanner(System.in);
-                System.out.println("Enter: ");
-                String names = scan.nextLine();
+            } else if (directions.equals("Search")) {
+                Scanner scanner = new Scanner(System.in);
+                System.out.println("Enter Name to search: ");
 
-                Person person = new Person();
+                String name = scanner.nextLine();
 
-                // add imported classes
-                if (names.equals("Full")) {
-                    System.out.println("Enter: ");
-                    String nam = scan.nextLine();
-
-                    person.setFirstName(nam);
-
-                    System.out.println((nam).toString());
-
-                }
-                // if statement to decided which to SEARCH
-                // getters and setters to call the names
-
-            }
-            if (directions.equals("delete")) {
+            } else if (directions.equals("delete")) {
                 Scanner delete = new Scanner(System.in);
                 System.out.println("Choose what element to delete");
                 String item = delete.nextLine();
@@ -108,15 +90,18 @@ public class Display {
 
                 }
 
-            }
-            if (directions.equals("update")) {
+            } else if (directions.equals("update")) {
                 // function to update
-            }
-            if (directions.equals("Show")) {
+                Scanner update = new Scanner(System.in);
+                System.out.println("Enter an Update: ");
+                String up = update.nextLine();
+
+                Objects.add(up);
+            } else if (directions.equals("Show")) {
                 // function to Show
                 for (int i = 0; i < Objects.size(); i++) {
 
-                    System.out.println(Objects.get(i) + " " + count + " " + "Log---");
+                    System.out.println(Objects.get(i) + " " + count + " " + "Log" + "Index: " + count);
                     count++;
                 }
             }
