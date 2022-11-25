@@ -20,7 +20,7 @@ public class Persontwo {
 
     public void SearchForLast() {
         Scanner scr = new Scanner(System.in);
-        System.out.println("Enter The first name you want to search for: ");
+        System.out.println("Enter The last name you want to search for: ");
         String Last = scr.nextLine();
 
     }

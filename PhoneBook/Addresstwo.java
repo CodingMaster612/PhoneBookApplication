@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class Addresstwo {
     String State;
     String city;
+    int zip;
+    int phoneNumber;
 
     public void SearchForState() {
         Scanner console = new Scanner(System.in);
@@ -20,6 +22,18 @@ public class Addresstwo {
 
     }
 
+    public void SearchForZip() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter The zip code you want to search for: ");
+        int zip = scanner.nextInt();
+    }
+
+    public void SearchForNumber() {
+        Scanner scannerNum = new Scanner(System.in);
+        System.out.println("Enter The Number code you want to search for: ");
+        int number = scannerNum.nextInt();
+    }
+
 }
 
 class Statement extends Addresstwo {
@@ -29,6 +43,18 @@ class Statement extends Addresstwo {
 }
 
 class City extends Addresstwo {
+    public void Display() {
+
+    }
+}
+
+class Zip extends Addresstwo {
+    public void Display() {
+
+    }
+}
+
+class phoneNumber extends Addresstwo {
     public void Display() {
 
     }

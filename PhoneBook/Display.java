@@ -10,7 +10,8 @@ public class Display {
     public static void main(String[] args) {
         String directions;
         int count = 0;
-        List<String> names = new ArrayList<>();
+        List<String> Objects = new ArrayList<>();
+        // List<Integer> address = new ArrayList<>();
 
         while (true) {
             Scanner console = new Scanner(System.in);
@@ -42,13 +43,37 @@ public class Display {
                 System.out.println("Enter a name");
                 String name = con.nextLine();
 
-                names.add(name);
+                Objects.add(name);
 
                 System.out.println("Enter a last name");
                 String lastName = con.nextLine();
 
-                names.add(lastName);
+                Objects.add(lastName);
+                // System.out.println("Complete full name entry:");
 
+                System.out.println("Enter a City name");
+                String city = con.nextLine();
+
+                Objects.add(city);
+
+                System.out.println("Enter a State name");
+                String state = con.nextLine();
+
+                Objects.add(state);
+
+                System.out.println("Enter a zip code");
+                String zip = con.nextLine();
+
+                Objects.add(zip);
+
+                System.out.println("Enter a number code");
+                String number = con.nextLine();
+
+                Objects.add(number);
+
+                // System.out.println("Full name, city, state, zip , Phone");
+                Objects.add(name + " ," + lastName + ", " + city + ", " + state
+                        + " ," + zip + ", " + number);
             }
             if (directions.equals("Search")) {
                 // function to search
@@ -61,21 +86,26 @@ public class Display {
 
                 City city = new City();
                 Statement state = new Statement();
+                Zip zip = new Zip();
+                phoneNumber number = new phoneNumber();
                 state.SearchForState();
                 city.SearchForCity();
+                zip.SearchForZip();
+                number.SearchForNumber();
 
             }
             if (directions.equals("delete")) {
                 // function to delete
+
             }
             if (directions.equals("update")) {
                 // function to update
             }
             if (directions.equals("Show")) {
                 // function to Show
-                for (int i = 0; i < names.size(); i++) {
+                for (int i = 0; i < Objects.size(); i++) {
 
-                    System.out.println(names.get(i) + " " + count + " " + "Log---");
+                    System.out.println(Objects.get(i) + " " + count + " " + "Log---");
                     count++;
                 }
             }
