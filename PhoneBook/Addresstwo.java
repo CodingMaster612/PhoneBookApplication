@@ -26,6 +26,7 @@ public class Addresstwo {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter The zip code you want to search for: ");
         int zip = scanner.nextInt();
+
     }
 
     public void SearchForNumber() {

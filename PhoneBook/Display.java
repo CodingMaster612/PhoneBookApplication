@@ -93,6 +93,15 @@ public class Display {
                 zip.SearchForZip();
                 number.SearchForNumber();
 
+                // Scanner word = new Scanner(System.in);
+                // System.out.println("Enter a keyword to find information");
+                // String words = word.nextLine();
+
+                // if (words.equals("FirstName")) {
+                // System.out.println(First + " ," + Last + ", " + city + ", " + state
+                // + " ," + zip + ", " + number);
+                // }
+
             }
             if (directions.equals("delete")) {
                 Scanner delete = new Scanner(System.in);

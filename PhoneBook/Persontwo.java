@@ -9,6 +9,7 @@ public class Persontwo {
 
     String Last;
     String First;
+    String Full;
 
     public void SearchForFirst() {
         Scanner console = new Scanner(System.in);
@@ -27,8 +28,17 @@ public class Persontwo {
 
     public void SearchForFullName() {
         Scanner FullName = new Scanner(System.in);
-        System.out.println("Enter The full name you want to search for: ");
+        System.out.println("Enter The the key word FullName to search for info: ");
         String Full = FullName.nextLine();
+
+        City city = new City();
+        Statement state = new Statement();
+        Zip zip = new Zip();
+        phoneNumber number = new phoneNumber();
+
+        if (Full.equals("FullName")) {
+            System.out.println(Full + city + state + zip + number);
+        }
 
     }
 
