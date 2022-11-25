@@ -1,5 +1,6 @@
 package PhoneBook;
 
+import java.rmi.server.SocketSecurityException;
 import java.util.ArrayList;
 
 import java.util.List;
@@ -8,6 +9,7 @@ import java.util.Scanner;
 public class Display {
     public static void main(String[] args) {
         String directions;
+        int count = 0;
         List<String> names = new ArrayList<>();
 
         while (true) {
@@ -72,7 +74,9 @@ public class Display {
             if (directions.equals("Show")) {
                 // function to Show
                 for (int i = 0; i < names.size(); i++) {
-                    System.out.println(names.get(i));
+
+                    System.out.println(names.get(i) + " " + count + " " + "Log---");
+                    count++;
                 }
             }
 
