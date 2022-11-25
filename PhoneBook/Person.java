@@ -1,8 +1,14 @@
 package PhoneBook;
 
+import java.util.Scanner;
+
 public class Person {
     private String firstName;
     private String lastName;
+
+    public Person() {
+        super();
+    }
 
     public Person(String firstName, String lastName) {
         super();

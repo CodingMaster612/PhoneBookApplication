@@ -76,31 +76,25 @@ public class Display {
                         + " ," + zip + ", " + number);
             }
             if (directions.equals("Search")) {
-                // function to search
-                firstName First = new firstName();
-                lastName Last = new lastName();
-                FullName Full = new FullName();
-                First.SearchForFirst();
-                Last.SearchForLast();
-                Full.SearchForFullName();
+                // add scanner
+                Scanner scan = new Scanner(System.in);
+                System.out.println("Enter: ");
+                String names = scan.nextLine();
 
-                City city = new City();
-                Statement state = new Statement();
-                Zip zip = new Zip();
-                phoneNumber number = new phoneNumber();
-                state.SearchForState();
-                city.SearchForCity();
-                zip.SearchForZip();
-                number.SearchForNumber();
+                Person person = new Person();
 
-                // Scanner word = new Scanner(System.in);
-                // System.out.println("Enter a keyword to find information");
-                // String words = word.nextLine();
+                // add imported classes
+                if (names.equals("Full")) {
+                    System.out.println("Enter: ");
+                    String nam = scan.nextLine();
 
-                // if (words.equals("FirstName")) {
-                // System.out.println(First + " ," + Last + ", " + city + ", " + state
-                // + " ," + zip + ", " + number);
-                // }
+                    person.setFirstName(nam);
+
+                    System.out.println((nam).toString());
+
+                }
+                // if statement to decided which to SEARCH
+                // getters and setters to call the names
 
             }
             if (directions.equals("delete")) {
