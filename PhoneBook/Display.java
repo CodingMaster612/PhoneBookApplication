@@ -77,6 +77,7 @@ public class Display {
                 Scanner scanner = new Scanner(System.in);
                 Person person = new Person();
                 System.out.println("Enter First Name to search: ");
+                // System.out.println(person.toString());
                 String First = scanner.nextLine();
                 System.out.println("Enter Last Name to search: ");
                 String Last = scanner.nextLine();
