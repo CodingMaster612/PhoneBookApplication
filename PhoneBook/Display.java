@@ -165,14 +165,6 @@ public class Display {
 
                 }
 
-                if (directions.equals("Search")) {
-                    for (int i = 0; i < Objects.size(); i++) {
-
-                        // System.out.println("Object Entry: " + Objects.get(i));
-
-                    }
-                }
-
             } else if (directions.equals("delete")) {
                 Scanner delete = new Scanner(System.in);
                 System.out.println("Choose what element to delete");
