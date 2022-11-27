@@ -107,10 +107,7 @@ public class Display {
                         break;
 
                     default:
-                        if (information.equals("q")) {
-                            System.out.println("Program Terminated");
-                            break;
-                        }
+                        System.out.println("error");
 
                 }
 
@@ -163,9 +160,14 @@ public class Display {
                         System.out.println(indexSeven);
                         break;
 
+                    default:
+                        System.out.println("error");
+
                 }
 
-            } else if (directions.equals("delete")) {
+            }
+
+            else if (directions.equals("delete")) {
                 Scanner delete = new Scanner(System.in);
                 System.out.println("Choose what element to delete");
                 String item = delete.nextLine();
