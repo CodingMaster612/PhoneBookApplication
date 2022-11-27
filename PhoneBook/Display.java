@@ -19,6 +19,8 @@ public class Display {
             System.out.println("---------------------------------------------");
             System.out.println("ADD-ENTRIES: Type Add");
             System.out.println("---------------------------------------------");
+            System.out.println("SEARCH-ENTRIES: Type Search-By-Index");
+            System.out.println("---------------------------------------------");
             System.out.println("SEARCH-ENTRIES: Type Search");
             System.out.println("---------------------------------------------");
             System.out.println("DELETE-ENTRIES: Type delete");
@@ -92,6 +94,9 @@ public class Display {
                         String zip = con.nextLine();
                         Objects.add(new String(zip));
                         Obj.setZip(zip);
+
+                        String element = Objects.get(0);
+                        System.out.println(element);
                         break;
 
                     case "Add-Number":
@@ -111,31 +116,7 @@ public class Display {
 
                 System.out.println(Obj.toString());
 
-                // System.out.println("Enter a name");
-                // String name = con.nextLine();
-                // Objects.add(new String(name));
-
-                // System.out.println("Enter a last name");
-                // String lastName = con.nextLine();
-                // Objects.add(new String(lastName));
-
-                // System.out.println("Enter a City name");
-                // String city = con.nextLine();
-                // Objects.add(new String(city));
-
-                // System.out.println("Enter a State name");
-                // String state = con.nextLine();
-                // Objects.add(new String(state));
-
-                // System.out.println("Enter a zip code");
-                // String zip = con.nextLine();
-                // Objects.add(new String(zip));
-
-                // System.out.println("Enter a number code");
-                // String number = con.nextLine();
-                // Objects.add(new String(number));
-
-            } else if (directions.equals("Search")) {
+            } else if (directions.equals("Search-By-Index")) {
 
                 Scanner scanner = new Scanner(System.in);
                 AllObjects Obj = new AllObjects();
@@ -143,20 +124,54 @@ public class Display {
                 System.out.println("Directions: To Search a certain Object type in the desired keyword");
 
                 System.out.println("###############################################");
-                System.out.println(": Type Search-First");
-                System.out.println("---------------------------------------------");
-                System.out.println(": Type Search-Last");
-                System.out.println("---------------------------------------------");
-                System.out.println(": Type Search-City");
-                System.out.println("---------------------------------------------");
-                System.out.println(": Type Search-State ");
-                System.out.println("---------------------------------------------");
-                System.out.println(": Type Search-Zip ");
-                System.out.println("---------------------------------------------");
-                System.out.println(": Type Search-Number");
+                System.out.println(": Type Index-(number): ");
                 System.out.println("###############################################");
 
-                String SearchInfo = scanner.nextLine();
+                int SearchInfo = scanner.nextInt();
+
+                switch (SearchInfo) {
+                    case 0:
+
+                        String indexZero = Objects.get(0);
+                        System.out.println(indexZero);
+
+                        break;
+
+                    case 1:
+                        String indexTwo = Objects.get(1);
+                        System.out.println(indexTwo);
+                        break;
+
+                    case 2:
+                        String indexThree = Objects.get(2);
+                        System.out.println(indexThree);
+                        break;
+                    case 3:
+                        String indexFour = Objects.get(3);
+                        System.out.println(indexFour);
+                        break;
+                    case 4:
+                        String indexFive = Objects.get(4);
+                        System.out.println(indexFive);
+                        break;
+                    case 5:
+                        String indexSix = Objects.get(5);
+                        System.out.println(indexSix);
+                        break;
+                    case 6:
+                        String indexSeven = Objects.get(6);
+                        System.out.println(indexSeven);
+                        break;
+
+                }
+
+                if (directions.equals("Search")) {
+                    for (int i = 0; i < Objects.size(); i++) {
+
+                        // System.out.println("Object Entry: " + Objects.get(i));
+
+                    }
+                }
 
             } else if (directions.equals("delete")) {
                 Scanner delete = new Scanner(System.in);
@@ -175,8 +190,7 @@ public class Display {
                 System.out.println("Enter an Update: ");
                 String up = update.nextLine();
                 System.out.println("Your information has been updated");
-
-                Objects.add(up);
+                Objects.add(new String(up));
             } else if (directions.equals("Show")) {
                 // function to Show
                 for (int i = 0; i < Objects.size(); i++) {

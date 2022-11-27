@@ -14,3 +14,7 @@ create a Person class and a Address class
 - add new format to Add functions
 - ask the user to choose if they want to continue to add names ect
 - code to search for item in list 
+
+
+// choose an elenemt by index 0 to get all the information regrading john doe ect
+
