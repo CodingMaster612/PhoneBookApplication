@@ -6,24 +6,23 @@ public class AllObjects {
     private String fullName;
     private String city;
     private String state;
-    private int phoneNumber;
-    private int zip;
+    private String phoneNumber;
+    private String zip;
 
     public AllObjects() {
         super();
     }
 
-    public AllObjects(String firstName, String lastName, String fullName, String city, String state, int zip,
-            int phoneNumber) {
+    public AllObjects(String firstName, String lastName, String fullName, String city, String state, String zip,
+            String phoneNumber) {
         super();
         this.firstName = firstName;
         this.lastName = lastName;
         this.fullName = fullName;
         this.city = city;
         this.state = state;
-        this.phoneNumber = phoneNumber;
         this.zip = zip;
-
+        this.phoneNumber = phoneNumber;
     }
 
     public String getLastName() {
@@ -66,24 +65,25 @@ public class AllObjects {
         this.state = state;
     }
 
-    public int getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
-    public int getZip() {
+    public String getZip() {
         return zip;
     }
 
-    public void setZip(int zip) {
+    public void setZip(String zip) {
         this.zip = zip;
     }
 
     public String toString() {
-        return "Idenity:[FirstName] " + firstName + "[LastName] " + lastName;
+        return "Idenity:[FirstName] " + firstName + "[LastName] " + lastName + "[FullName]" + fullName + "[city]" + city
+                + "[state]" + state + "[zip]" + zip + "[PhoneNumber]" + phoneNumber;
     }
 
 }

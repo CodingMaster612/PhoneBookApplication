@@ -8,7 +8,6 @@ import java.util.Scanner;
 public class Display {
     public static void main(String[] args) {
         String directions;
-        int count = 0;
 
         List<String> Objects = new ArrayList<>();
         // List<Integer> address = new ArrayList<>();
@@ -37,44 +36,57 @@ public class Display {
             }
 
             else if (directions.equals("Add")) {
-                // add a while loop
+
                 Scanner con = new Scanner(System.in);
+                System.out.println("Directions: To Add a certain Object type in the desired keyword");
 
-                System.out.println("Enter a name");
-                String name = con.nextLine();
-                Objects.add(new String(name));
+                System.out.println("###############################################");
+                System.out.println(": Type Add-First");
+                System.out.println("---------------------------------------------");
+                System.out.println(": Type Add-Last");
+                System.out.println("---------------------------------------------");
+                System.out.println(": Type Add-City");
+                System.out.println("---------------------------------------------");
+                System.out.println(": Type Add-State ");
+                System.out.println("---------------------------------------------");
+                System.out.println(": Type Add-Zip ");
+                System.out.println("---------------------------------------------");
+                System.out.println(": Type Add-PhoneNumber");
+                System.out.println("###############################################");
 
-                // Objects.add(name);
+                String information = con.nextLine();
 
-                // System.out.println("Enter a last name");
-                // String lastName = con.nextLine();
+                switch (information) {
+                    case "Add-First":
+                        System.out.println("Enter a name");
+                        String name = con.nextLine();
+                        Objects.add(new String(name));
+                }
 
-                // Objects.add(lastName);
-                // // System.out.println("Complete full name entry:");
+                // System.out.println("Enter a name");
+                // String name = con.nextLine();
+                // Objects.add(new String(name));
 
-                // System.out.println("Enter a City name");
-                // String city = con.nextLine();
+                System.out.println("Enter a last name");
+                String lastName = con.nextLine();
+                Objects.add(new String(lastName));
 
-                // Objects.add(city);
+                System.out.println("Enter a City name");
+                String city = con.nextLine();
+                Objects.add(new String(city));
 
-                // System.out.println("Enter a State name");
-                // String state = con.nextLine();
+                System.out.println("Enter a State name");
+                String state = con.nextLine();
+                Objects.add(new String(state));
 
-                // Objects.add(state);
+                System.out.println("Enter a zip code");
+                String zip = con.nextLine();
+                Objects.add(new String(zip));
 
-                // System.out.println("Enter a zip code");
-                // String zip = con.nextLine();
+                System.out.println("Enter a number code");
+                String number = con.nextLine();
+                Objects.add(new String(number));
 
-                // Objects.add(zip);
-
-                // System.out.println("Enter a number code");
-                // String number = con.nextLine();
-
-                // Objects.add(number);
-
-                // // System.out.println("Full name, city, state, zip , Phone");
-                // Objects.add(name + " ," + lastName + ", " + city + ", " + state
-                // + " ," + zip + ", " + number);
             } else if (directions.equals("Search")) {
 
             } else if (directions.equals("delete")) {
@@ -99,8 +111,8 @@ public class Display {
                 // function to Show
                 for (int i = 0; i < Objects.size(); i++) {
 
-                    System.out.println(Objects.get(i) + " " + count + " " + "Log" + "Index: " + count);
-                    count++;
+                    System.out.println(Objects.get(i));
+
                 }
             }
 
