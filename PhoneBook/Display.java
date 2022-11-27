@@ -137,6 +137,27 @@ public class Display {
 
             } else if (directions.equals("Search")) {
 
+                Scanner scanner = new Scanner(System.in);
+                AllObjects Obj = new AllObjects();
+
+                System.out.println("Directions: To Search a certain Object type in the desired keyword");
+
+                System.out.println("###############################################");
+                System.out.println(": Type Search-First");
+                System.out.println("---------------------------------------------");
+                System.out.println(": Type Search-Last");
+                System.out.println("---------------------------------------------");
+                System.out.println(": Type Search-City");
+                System.out.println("---------------------------------------------");
+                System.out.println(": Type Search-State ");
+                System.out.println("---------------------------------------------");
+                System.out.println(": Type Search-Zip ");
+                System.out.println("---------------------------------------------");
+                System.out.println(": Type Search-Number");
+                System.out.println("###############################################");
+
+                String SearchInfo = scanner.nextLine();
+
             } else if (directions.equals("delete")) {
                 Scanner delete = new Scanner(System.in);
                 System.out.println("Choose what element to delete");
