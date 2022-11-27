@@ -51,7 +51,7 @@ public class Display {
                 System.out.println("---------------------------------------------");
                 System.out.println(": Type Add-Zip ");
                 System.out.println("---------------------------------------------");
-                System.out.println(": Type Add-PhoneNumber");
+                System.out.println(": Type Add-Number");
                 System.out.println("###############################################");
 
                 String information = con.nextLine();
@@ -61,31 +61,69 @@ public class Display {
                         System.out.println("Enter a name");
                         String name = con.nextLine();
                         Objects.add(new String(name));
+                        break;
+
+                    case "Add-Last":
+                        System.out.println("Enter a last name");
+                        String lastName = con.nextLine();
+                        Objects.add(new String(lastName));
+                        break;
+
+                    case "Add-City":
+                        System.out.println("Enter a City name");
+                        String city = con.nextLine();
+                        Objects.add(new String(city));
+                        break;
+
+                    case "Add-State":
+                        System.out.println("Enter a State name");
+                        String state = con.nextLine();
+                        Objects.add(new String(state));
+                        break;
+
+                    case "Add-Zip":
+                        System.out.println("Enter a zip code");
+                        String zip = con.nextLine();
+                        Objects.add(new String(zip));
+                        break;
+
+                    case "Add-Number":
+                        System.out.println("Enter a number code");
+                        String number = con.nextLine();
+                        Objects.add(new String(number));
+                        break;
+
+                    default:
+                        if (information.equals("q")) {
+                            System.out.println("Program Terminated");
+                            break;
+                        }
+
                 }
 
                 // System.out.println("Enter a name");
                 // String name = con.nextLine();
                 // Objects.add(new String(name));
 
-                System.out.println("Enter a last name");
-                String lastName = con.nextLine();
-                Objects.add(new String(lastName));
+                // System.out.println("Enter a last name");
+                // String lastName = con.nextLine();
+                // Objects.add(new String(lastName));
 
-                System.out.println("Enter a City name");
-                String city = con.nextLine();
-                Objects.add(new String(city));
+                // System.out.println("Enter a City name");
+                // String city = con.nextLine();
+                // Objects.add(new String(city));
 
-                System.out.println("Enter a State name");
-                String state = con.nextLine();
-                Objects.add(new String(state));
+                // System.out.println("Enter a State name");
+                // String state = con.nextLine();
+                // Objects.add(new String(state));
 
-                System.out.println("Enter a zip code");
-                String zip = con.nextLine();
-                Objects.add(new String(zip));
+                // System.out.println("Enter a zip code");
+                // String zip = con.nextLine();
+                // Objects.add(new String(zip));
 
-                System.out.println("Enter a number code");
-                String number = con.nextLine();
-                Objects.add(new String(number));
+                // System.out.println("Enter a number code");
+                // String number = con.nextLine();
+                // Objects.add(new String(number));
 
             } else if (directions.equals("Search")) {
 
@@ -111,7 +149,7 @@ public class Display {
                 // function to Show
                 for (int i = 0; i < Objects.size(); i++) {
 
-                    System.out.println(Objects.get(i));
+                    System.out.println("Object Entry: " + Objects.get(i));
 
                 }
             }
