@@ -82,8 +82,9 @@ public class AllObjects {
     }
 
     public String toString() {
-        return "Idenity:[FirstName] " + firstName + "[LastName] " + lastName + "[FullName]" + fullName + "[city]" + city
-                + "[state]" + state + "[zip]" + zip + "[PhoneNumber]" + phoneNumber;
+        return "IDENTITY : [FIRST-NAME] " + firstName + " [LAST-NAME] " + lastName + " [FULL-NAME] " + fullName
+                + " [CITY] " + city
+                + " [STATE] " + state + " [ZIP] " + zip + " [PHONE-NUMBER] " + phoneNumber + " ";
     }
 
 }

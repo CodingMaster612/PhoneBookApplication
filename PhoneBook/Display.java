@@ -56,41 +56,49 @@ public class Display {
 
                 String information = con.nextLine();
 
+                AllObjects Obj = new AllObjects();
+
                 switch (information) {
                     case "Add-First":
                         System.out.println("Enter a name");
                         String name = con.nextLine();
                         Objects.add(new String(name));
+                        Obj.setFirstName(name);
                         break;
 
                     case "Add-Last":
                         System.out.println("Enter a last name");
                         String lastName = con.nextLine();
                         Objects.add(new String(lastName));
+                        Obj.setLastName(lastName);
                         break;
 
                     case "Add-City":
                         System.out.println("Enter a City name");
                         String city = con.nextLine();
                         Objects.add(new String(city));
+                        Obj.setCity(city);
                         break;
 
                     case "Add-State":
                         System.out.println("Enter a State name");
                         String state = con.nextLine();
                         Objects.add(new String(state));
+                        Obj.setState(state);
                         break;
 
                     case "Add-Zip":
                         System.out.println("Enter a zip code");
                         String zip = con.nextLine();
                         Objects.add(new String(zip));
+                        Obj.setZip(zip);
                         break;
 
                     case "Add-Number":
                         System.out.println("Enter a number code");
                         String number = con.nextLine();
                         Objects.add(new String(number));
+                        Obj.setPhoneNumber(number);
                         break;
 
                     default:
@@ -100,6 +108,8 @@ public class Display {
                         }
 
                 }
+
+                System.out.println(Obj.toString());
 
                 // System.out.println("Enter a name");
                 // String name = con.nextLine();
@@ -143,6 +153,7 @@ public class Display {
                 Scanner update = new Scanner(System.in);
                 System.out.println("Enter an Update: ");
                 String up = update.nextLine();
+                System.out.println("Your information has been updated");
 
                 Objects.add(up);
             } else if (directions.equals("Show")) {
