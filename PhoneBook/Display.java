@@ -9,6 +9,7 @@ public class Display {
     public static void main(String[] args) {
         String directions;
         int count = 0;
+
         List<String> Objects = new ArrayList<>();
         // List<Integer> address = new ArrayList<>();
 
@@ -41,50 +42,40 @@ public class Display {
 
                 System.out.println("Enter a name");
                 String name = con.nextLine();
+                Objects.add(new String(name));
 
-                Objects.add(name);
+                // Objects.add(name);
 
-                System.out.println("Enter a last name");
-                String lastName = con.nextLine();
+                // System.out.println("Enter a last name");
+                // String lastName = con.nextLine();
 
-                Objects.add(lastName);
-                // System.out.println("Complete full name entry:");
+                // Objects.add(lastName);
+                // // System.out.println("Complete full name entry:");
 
-                System.out.println("Enter a City name");
-                String city = con.nextLine();
+                // System.out.println("Enter a City name");
+                // String city = con.nextLine();
 
-                Objects.add(city);
+                // Objects.add(city);
 
-                System.out.println("Enter a State name");
-                String state = con.nextLine();
+                // System.out.println("Enter a State name");
+                // String state = con.nextLine();
 
-                Objects.add(state);
+                // Objects.add(state);
 
-                System.out.println("Enter a zip code");
-                String zip = con.nextLine();
+                // System.out.println("Enter a zip code");
+                // String zip = con.nextLine();
 
-                Objects.add(zip);
+                // Objects.add(zip);
 
-                System.out.println("Enter a number code");
-                String number = con.nextLine();
+                // System.out.println("Enter a number code");
+                // String number = con.nextLine();
 
-                Objects.add(number);
+                // Objects.add(number);
 
-                // System.out.println("Full name, city, state, zip , Phone");
-                Objects.add(name + " ," + lastName + ", " + city + ", " + state
-                        + " ," + zip + ", " + number);
+                // // System.out.println("Full name, city, state, zip , Phone");
+                // Objects.add(name + " ," + lastName + ", " + city + ", " + state
+                // + " ," + zip + ", " + number);
             } else if (directions.equals("Search")) {
-                Scanner scanner = new Scanner(System.in);
-                Person person = new Person();
-                System.out.println("Enter First Name to search: ");
-                // System.out.println(person.toString());
-                String First = scanner.nextLine();
-                System.out.println("Enter Last Name to search: ");
-                String Last = scanner.nextLine();
-                person.setFirstName(First);
-                person.setLastName(Last);
-
-                System.out.println(person.toString());
 
             } else if (directions.equals("delete")) {
                 Scanner delete = new Scanner(System.in);

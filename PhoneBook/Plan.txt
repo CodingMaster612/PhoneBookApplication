@@ -5,3 +5,12 @@ create a Person class and a Address class
 -create an interface for appearance of the options to be selected 
 -code an option to quit the program
 -code an option to select which functions run
+
+
+
+
+
+
+- add new format to Add functions
+- ask the user to choose if they want to continue to add names ect
+- code to search for item in list 
