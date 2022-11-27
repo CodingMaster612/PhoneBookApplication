@@ -10,7 +10,7 @@ create a Person class and a Address class
 
 
 
-
+- make class with all the variables in it and put it in the add function
 - add new format to Add functions
 - ask the user to choose if they want to continue to add names ect
 - code to search for item in list 
