@@ -4,17 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Address {
-    private int address;
+    private String address;
     private String state;
-    private int zipCode;
+    private String zipCode;
 
-    List<Integer> add = new ArrayList<>();
+    List<String> add = new ArrayList<>();
 
     public Address() {
         super();
     }
 
-    public Address(int address, String state, int zipCode) {
+    public Address(String address, String state, String zipCode) {
         super();
         this.address = address;
         this.state = state;
@@ -22,11 +22,11 @@ public class Address {
 
     }
 
-    public int getAddress() {
+    public String getAddress() {
         return address;
     }
 
-    public void setAddress(int address) {
+    public void setAddress(String address) {
         this.address = address;
     }
 
@@ -38,16 +38,24 @@ public class Address {
         this.state = state;
     }
 
-    public int getZipCode() {
+    public String getZipCode() {
         return zipCode;
     }
 
-    public void setZipCode(int zipCode) {
+    public void setZipCode(String zipCode) {
         this.zipCode = zipCode;
     }
 
-    public Address(List<Integer> add) {
+    public List<String> getAdd() {
+        return add;
+    }
 
+    public void setAdd(List<String> add) {
+        this.add = add;
+    }
+
+    public String toString() {
+        return address + state + zipCode;
     }
 
 }

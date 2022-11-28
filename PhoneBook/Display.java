@@ -28,7 +28,7 @@ public class Display {
             System.out.println("---------------------------------------------");
             System.out.println("DELETE-ENTRIES: Type delete");
             System.out.println("---------------------------------------------");
-            System.out.println("DELETE-ENTRIES: Type Delete-Address");
+            System.out.println("DELETE-ENTRIES: Type deleted-address");
             System.out.println("---------------------------------------------");
             System.out.println("UPDATE=ENTRIES: Type update ");
             System.out.println("---------------------------------------------");
@@ -119,11 +119,17 @@ public class Display {
                 System.out.println(Objects.toString());
 
             } else if (directions.equals("Add-Address")) {
+                Address add = new Address();
+
                 Scanner scanner = new Scanner(System.in);
                 System.out.println("Enter A Address");
                 String items = scanner.nextLine();
 
                 address.add(items);
+                add.setAddress(items);
+
+                System.out.println(address.toString());
+
             }
 
             else if (directions.equals("Search")) {
@@ -194,7 +200,7 @@ public class Display {
 
                 }
 
-            } else if (directions.equals("deleted")) {
+            } else if (directions.equals("deleted-address")) {
                 Scanner x = new Scanner(System.in);
                 System.out.println("Choose what element to delete");
                 String items = x.nextLine();
@@ -204,6 +210,7 @@ public class Display {
                     address.remove(items);
 
                 }
+                System.out.println(address.toString());
             }
 
             else if (directions.equals("update")) {
