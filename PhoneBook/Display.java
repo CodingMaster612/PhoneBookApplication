@@ -1,7 +1,7 @@
 package PhoneBook;
 
 import java.util.ArrayList;
-
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ public class Display {
 
         List<String> Objects = new ArrayList<>();
 
-        List<Integer> fixedList = Arrays.asList(new Integer[5]);
+        List<Integer> address = new ArrayList<>();
 
         while (true) {
             Scanner console = new Scanner(System.in);
@@ -19,6 +19,8 @@ public class Display {
             System.out.println("Please enter your selection: (q to Quit): ");
             System.out.println("---------------------------------------------");
             System.out.println("ADD-ENTRIES: Type Add");
+            System.out.println("---------------------------------------------");
+            System.out.println("ADD-ENTRIES: Type Add-Address");
             System.out.println("---------------------------------------------");
             System.out.println("SEARCH-ENTRIES: Type Search");
             System.out.println("---------------------------------------------");
@@ -111,6 +113,18 @@ public class Display {
                 }
                 // Obj.setFirstName(information);
                 System.out.println(Objects.toString());
+
+            } else if (directions.equals("Add-Address")) {
+                Address add = new Address();
+
+                Scanner scanner = new Scanner(System.in);
+                System.out.println("Enter zipcode: ");
+                int scr = scanner.nextInt();
+                for (int i = 0; i < address.size(); i++) {
+                    address.add(scr);
+                    add.setAddress(scr);
+
+                }
 
             }
 

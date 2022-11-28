@@ -1,11 +1,20 @@
 package PhoneBook;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Address {
-    private String address;
+    private int address;
     private String state;
     private int zipCode;
 
-    public Address(String address, String state, int zipCode) {
+    List<Integer> add = new ArrayList<>();
+
+    public Address() {
+        super();
+    }
+
+    public Address(int address, String state, int zipCode) {
         super();
         this.address = address;
         this.state = state;
@@ -13,11 +22,11 @@ public class Address {
 
     }
 
-    public String getAddress() {
+    public int getAddress() {
         return address;
     }
 
-    public void setAddress(String address) {
+    public void setAddress(int address) {
         this.address = address;
     }
 
@@ -36,4 +45,9 @@ public class Address {
     public void setZipCode(int zipCode) {
         this.zipCode = zipCode;
     }
+
+    public Address(List<Integer> add) {
+
+    }
+
 }
