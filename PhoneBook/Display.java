@@ -230,21 +230,41 @@ public class Display {
                 System.out.println("Enter Index: ");
                 String index = X.nextLine();
 
-                if (index.equals("IndexZero")) {
+                if (index.equals("Zero")) {
                     System.out.println("Enter to add info to index 0: ");
                     index = X.nextLine();
                     address.add(0, index);
                 }
-                if (index.equals("IndexOne")) {
+                if (index.equals("One")) {
                     System.out.println("Enter to add info to index 1: ");
                     index = X.nextLine();
                     address.add(1, index);
                 }
 
-                if (index.equals("IndexTwo")) {
+                if (index.equals("Two")) {
                     System.out.println("Enter to add info to index 2: ");
                     index = X.nextLine();
                     address.add(2, index);
+                }
+                if (index.equals("Three")) {
+                    System.out.println("Enter to add info to index 3 ");
+                    index = X.nextLine();
+                    address.add(3, index);
+                }
+                if (index.equals("Four")) {
+                    System.out.println("Enter to add info to index 4: ");
+                    index = X.nextLine();
+                    address.add(4, index);
+                }
+                if (index.equals("Five")) {
+                    System.out.println("Enter to add info to index 5: ");
+                    index = X.nextLine();
+                    address.add(5, index);
+                }
+                if (index.equals("Six")) {
+                    System.out.println("Enter to add info to index 5: ");
+                    index = X.nextLine();
+                    address.add(6, index);
                 }
 
             }
