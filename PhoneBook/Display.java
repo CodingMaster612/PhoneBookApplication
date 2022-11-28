@@ -173,7 +173,8 @@ public class Display {
                 Scanner str = new Scanner(System.in);
                 System.out.println("Enter: ");
                 String s = str.nextLine();
-
+                // add forloop at the end
+                // use sout to print name + v + x + c
                 // add class
             }
 
