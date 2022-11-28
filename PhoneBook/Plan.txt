@@ -25,3 +25,9 @@ create a Person class and a Address class
 
 //add implemt fucntion to add at a certain index
 //namesList.add(0, "Lokesh");
+
+//add menu to search
+
+//add list<PErson> getPhoneBook(){
+    
+}

@@ -5,14 +5,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import javax.sound.sampled.SourceDataLine;
-
 public class Display {
     public static void main(String[] args) {
         String directions;
 
         List<String> Objects = new ArrayList<>();
-        List<String> Person = new ArrayList<>();
+
+        List<Integer> fixedList = Arrays.asList(new Integer[5]);
 
         while (true) {
             Scanner console = new Scanner(System.in);
@@ -125,6 +124,19 @@ public class Display {
                     if (str.equals("Search-Start")) {
 
                         System.out.println("Enter to choose the desired information: ");
+                        System.out.println("????????????????????????????????????????????");
+                        System.out.println(": Type Search First-Name");
+                        System.out.println("---------------------------------------------");
+                        System.out.println(": Type Search Last-name");
+                        System.out.println("---------------------------------------------");
+                        System.out.println(": Type Search City");
+                        System.out.println("---------------------------------------------");
+                        System.out.println(": Type Search State ");
+                        System.out.println("---------------------------------------------");
+                        System.out.println(": Type Search Zip ");
+                        System.out.println("---------------------------------------------");
+                        System.out.println(": Type Search PhoneNumber");
+                        System.out.println("???????????????????????????????????????????");
                         str = search.nextLine();
                     }
                     switch (str) {
@@ -151,7 +163,7 @@ public class Display {
 
                         default:
                             for (int j = 0; j < Objects.size(); j++) {
-                                System.out.println(Objects.get(i));
+                                System.out.println(Objects.get(i) + "Invalid Key word ");
                             }
 
                     }

@@ -12,6 +12,8 @@ public class AllObjects {
     private String phoneNumber;
     private String zip;
 
+    List<String> Objects = new ArrayList<>();
+
     public AllObjects() {
         super();
     }
@@ -92,6 +94,11 @@ public class AllObjects {
 
     public String infoOnFirstName() {
         return lastName + city + state + zip + phoneNumber;
+    }
+
+    public AllObjects(List<String> objects) {
+        Objects = objects;
+
     }
 
 }
