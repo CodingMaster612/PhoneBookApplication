@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import javax.sound.sampled.SourceDataLine;
+
 public class Display {
     public static void main(String[] args) {
         String directions;
@@ -165,6 +167,14 @@ public class Display {
 
                 }
 
+            }
+
+            else if (directions.equals("Search")) {
+                Scanner str = new Scanner(System.in);
+                System.out.println("Enter: ");
+                String s = str.nextLine();
+
+                // add class
             }
 
             else if (directions.equals("delete")) {
