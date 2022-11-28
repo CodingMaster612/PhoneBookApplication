@@ -13,7 +13,7 @@ public class Display {
 
         List<String> Objects = new ArrayList<>();
 
-        List<Integer> address = new ArrayList<>();
+        List<String> address = new ArrayList<>();
 
         while (true) {
             Scanner console = new Scanner(System.in);
@@ -121,7 +121,7 @@ public class Display {
             } else if (directions.equals("Add-Address")) {
                 Scanner scanner = new Scanner(System.in);
                 System.out.println("Enter A Address");
-                int items = scanner.nextInt();
+                String items = scanner.nextLine();
 
                 address.add(items);
             }
@@ -193,13 +193,17 @@ public class Display {
                     Objects.remove(item);
 
                 }
-                System.out.println("Choose What Address to delete");
-                int items = delete.nextInt();
 
-                for (int j = 0; j < address.size(); j++) {
+            } else if (directions.equals("deleted")) {
+                Scanner x = new Scanner(System.in);
+                System.out.println("Choose what element to delete");
+                String items = x.nextLine();
+
+                for (int i = 0; i < address.size(); i++) {
+
                     address.remove(items);
-                }
 
+                }
             }
 
             else if (directions.equals("update")) {
