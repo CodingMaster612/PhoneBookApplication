@@ -32,6 +32,8 @@ public class Display {
             System.out.println("---------------------------------------------");
             System.out.println("UPDATE=ENTRIES: Type update ");
             System.out.println("---------------------------------------------");
+            System.out.println("UPDATE=ENTRIES: Type Add-By-Index ");
+            System.out.println("---------------------------------------------");
             System.out.println("SHOW-IN-ORDER: Type Show ");
             // System.out.println("EXIT: ");
 
@@ -128,6 +130,9 @@ public class Display {
                 address.add(items);
                 add.setAddress(items);
 
+                // address.add(0, items);
+                // add teh ability to add things to a certain index
+
                 System.out.println(address.toString());
 
             }
@@ -220,7 +225,31 @@ public class Display {
                 String up = update.nextLine();
                 System.out.println("Your information has been updated");
                 Objects.add(new String(up));
-            } else if (directions.equals("Show")) {
+            } else if (directions.equals("Add-By-Index")) {
+                Scanner X = new Scanner(System.in);
+                System.out.println("Enter Index: ");
+                String index = X.nextLine();
+
+                if (index.equals("IndexZero")) {
+                    System.out.println("Enter to add info to index 0: ");
+                    index = X.nextLine();
+                    address.add(0, index);
+                }
+                if (index.equals("IndexOne")) {
+                    System.out.println("Enter to add info to index 1: ");
+                    index = X.nextLine();
+                    address.add(1, index);
+                }
+
+                if (index.equals("IndexTwo")) {
+                    System.out.println("Enter to add info to index 2: ");
+                    index = X.nextLine();
+                    address.add(2, index);
+                }
+
+            }
+
+            else if (directions.equals("Show")) {
                 // function to Show
                 for (int i = 0; i < Objects.size(); i++) {
 
