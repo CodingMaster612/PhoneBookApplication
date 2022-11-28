@@ -116,19 +116,22 @@ public class Display {
             }
 
             else if (directions.equals("Search")) {
-                AllObjects warning = new AllObjects();
+
                 Scanner search = new Scanner(System.in);
-                System.out.println("Choose what element to Search");
+                System.out.println("Choose what element to Search Type Search-Start: ");
                 String str = search.nextLine();
 
                 for (int i = 0; i < Objects.size(); i++) {
+                    if (str.equals("Search-Start")) {
 
-                    if (str.equals("First")) {
-
+                        System.out.println("Enter The index or Indexes to choose the desired information: ");
+                        str = search.nextLine();
+                    }
+                    if (str.equals("0")) {
+                        System.out.println("Element Info : " + Objects.get(i));
                     }
 
                 }
-
             }
 
             else if (directions.equals("delete")) {
