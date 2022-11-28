@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
+import javax.xml.transform.Source;
+
 public class Display {
     public static void main(String[] args) {
         String directions;
@@ -25,6 +27,8 @@ public class Display {
             System.out.println("SEARCH-ENTRIES: Type Search");
             System.out.println("---------------------------------------------");
             System.out.println("DELETE-ENTRIES: Type delete");
+            System.out.println("---------------------------------------------");
+            System.out.println("DELETE-ENTRIES: Type Delete-Address");
             System.out.println("---------------------------------------------");
             System.out.println("UPDATE=ENTRIES: Type update ");
             System.out.println("---------------------------------------------");
@@ -115,17 +119,11 @@ public class Display {
                 System.out.println(Objects.toString());
 
             } else if (directions.equals("Add-Address")) {
-                Address add = new Address();
-
                 Scanner scanner = new Scanner(System.in);
-                System.out.println("Enter zipcode: ");
-                int scr = scanner.nextInt();
-                for (int i = 0; i < address.size(); i++) {
-                    address.add(scr);
-                    add.setAddress(scr);
+                System.out.println("Enter A Address");
+                int items = scanner.nextInt();
 
-                }
-
+                address.add(items);
             }
 
             else if (directions.equals("Search")) {
@@ -177,7 +175,7 @@ public class Display {
 
                         default:
                             for (int j = 0; j < Objects.size(); j++) {
-                                System.out.println(Objects.get(i) + "Invalid Key word ");
+                                System.out.println(Objects.get(i) + " Invalid Key word ");
                             }
 
                     }
@@ -195,8 +193,16 @@ public class Display {
                     Objects.remove(item);
 
                 }
+                System.out.println("Choose What Address to delete");
+                int items = delete.nextInt();
 
-            } else if (directions.equals("update")) {
+                for (int j = 0; j < address.size(); j++) {
+                    address.remove(items);
+                }
+
+            }
+
+            else if (directions.equals("update")) {
                 // function to update
                 Scanner update = new Scanner(System.in);
                 System.out.println("Enter an Update: ");
@@ -207,7 +213,12 @@ public class Display {
                 // function to Show
                 for (int i = 0; i < Objects.size(); i++) {
 
-                    System.out.println("Object Entry: " + Objects.get(i));
+                    System.out.println("Object Entry for Main List: " + Objects.get(i));
+
+                }
+                for (int j = 0; j < address.size(); j++) {
+
+                    System.out.println("Object Entry For Address: " + address.get(j));
 
                 }
             }
