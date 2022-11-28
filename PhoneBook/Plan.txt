@@ -22,3 +22,6 @@ create a Person class and a Address class
 
 
 1.IMPORTANT: Search by name to find all info on said name
+
+//add implemt fucntion to add at a certain index
+//namesList.add(0, "Lokesh");

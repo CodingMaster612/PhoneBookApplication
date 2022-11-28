@@ -124,11 +124,36 @@ public class Display {
                 for (int i = 0; i < Objects.size(); i++) {
                     if (str.equals("Search-Start")) {
 
-                        System.out.println("Enter The index or Indexes to choose the desired information: ");
+                        System.out.println("Enter to choose the desired information: ");
                         str = search.nextLine();
                     }
-                    if (str.equals("0")) {
-                        System.out.println("Element Info : " + Objects.get(i));
+                    switch (str) {
+                        case "First-Name":
+                            System.out.println("Element Info : " + Objects.get(i));
+                            break;
+                        case "Last-Name":
+                            System.out.println("Element Info : " + Objects.get(i));
+                            break;
+                        case "City":
+                            System.out.println("Element Info : " + Objects.get(i));
+                            break;
+                        case "State":
+                            System.out.println("Element Info : " + Objects.get(i));
+                            break;
+
+                        case "Zip":
+                            System.out.println("Element Info : " + Objects.get(i));
+                            break;
+
+                        case "PhoneNumber":
+                            System.out.println("Element Info : " + Objects.get(i));
+                            break;
+
+                        default:
+                            for (int j = 0; j < Objects.size(); j++) {
+                                System.out.println(Objects.get(i));
+                            }
+
                     }
 
                 }
