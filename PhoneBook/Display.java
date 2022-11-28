@@ -66,6 +66,7 @@ public class Display {
                         String name = con.nextLine();
                         Objects.add(new String(name));
                         Obj.setFirstName(name);
+
                         break;
 
                     case "Add-Last":
@@ -95,8 +96,6 @@ public class Display {
                         Objects.add(new String(zip));
                         Obj.setZip(zip);
 
-                        String element = Objects.get(0);
-                        System.out.println(element);
                         break;
 
                     case "Add-Number":
@@ -107,11 +106,12 @@ public class Display {
                         break;
 
                     default:
-                        System.out.println("error");
+
+                        System.out.println("Invalid input");
 
                 }
-
-                System.out.println(Obj.toString());
+                // Obj.setFirstName(information);
+                System.out.println(Objects.toString());
 
             } else if (directions.equals("Search-By-Index")) {
 

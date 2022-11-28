@@ -87,4 +87,7 @@ public class AllObjects {
                 + " [STATE] " + state + " [ZIP] " + zip + " [PHONE-NUMBER] " + phoneNumber + " ";
     }
 
+    public String infoOnFirstName() {
+        return lastName + city + state + zip + phoneNumber;
+    }
 }

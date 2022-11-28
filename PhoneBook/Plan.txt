@@ -19,3 +19,6 @@ create a Person class and a Address class
 // choose an elenemt by index 0 to get all the information regrading john doe ect
 
 //use delete function functionality to make a program to give all infortion by seleted name the for loop is used and Objects.add(item )
+
+
+1.IMPORTANT: Search by name to find all info on said name
