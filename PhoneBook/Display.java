@@ -12,7 +12,7 @@ public class Display {
         String directions;
 
         List<String> Objects = new ArrayList<>();
-        // List<Integer> address = new ArrayList<>();
+        List<String> Person = new ArrayList<>();
 
         while (true) {
             Scanner console = new Scanner(System.in);
@@ -20,8 +20,6 @@ public class Display {
             System.out.println("Please enter your selection: (q to Quit): ");
             System.out.println("---------------------------------------------");
             System.out.println("ADD-ENTRIES: Type Add");
-            System.out.println("---------------------------------------------");
-            System.out.println("SEARCH-ENTRIES: Type Search-By-Index");
             System.out.println("---------------------------------------------");
             System.out.println("SEARCH-ENTRIES: Type Search");
             System.out.println("---------------------------------------------");
@@ -115,67 +113,22 @@ public class Display {
                 // Obj.setFirstName(information);
                 System.out.println(Objects.toString());
 
-            } else if (directions.equals("Search-By-Index")) {
-
-                Scanner scanner = new Scanner(System.in);
-                AllObjects Obj = new AllObjects();
-
-                System.out.println("Directions: To Search a certain Object type in the desired keyword");
-
-                System.out.println("###############################################");
-                System.out.println(": Type Index-(number): ");
-                System.out.println("###############################################");
-
-                int SearchInfo = scanner.nextInt();
-
-                switch (SearchInfo) {
-                    case 0:
-
-                        String indexZero = Objects.get(0);
-                        System.out.println(indexZero);
-
-                        break;
-
-                    case 1:
-                        String indexTwo = Objects.get(1);
-                        System.out.println(indexTwo);
-                        break;
-
-                    case 2:
-                        String indexThree = Objects.get(2);
-                        System.out.println(indexThree);
-                        break;
-                    case 3:
-                        String indexFour = Objects.get(3);
-                        System.out.println(indexFour);
-                        break;
-                    case 4:
-                        String indexFive = Objects.get(4);
-                        System.out.println(indexFive);
-                        break;
-                    case 5:
-                        String indexSix = Objects.get(5);
-                        System.out.println(indexSix);
-                        break;
-                    case 6:
-                        String indexSeven = Objects.get(6);
-                        System.out.println(indexSeven);
-                        break;
-
-                    default:
-                        System.out.println("error");
-
-                }
-
             }
 
             else if (directions.equals("Search")) {
-                Scanner str = new Scanner(System.in);
-                System.out.println("Enter: ");
-                String s = str.nextLine();
-                // add forloop at the end
-                // use sout to print name + v + x + c
-                // add class
+                AllObjects warning = new AllObjects();
+                Scanner search = new Scanner(System.in);
+                System.out.println("Choose what element to Search");
+                String str = search.nextLine();
+
+                for (int i = 0; i < Objects.size(); i++) {
+
+                    if (str.equals("First")) {
+
+                    }
+
+                }
+
             }
 
             else if (directions.equals("delete")) {
