@@ -15,6 +15,8 @@ public class Display {
 
         List<String> address = new ArrayList<>();
 
+        // add list person
+
         while (true) {
             Scanner console = new Scanner(System.in);
 
@@ -35,6 +37,8 @@ public class Display {
             System.out.println("UPDATE=ENTRIES: Type Add-By-Index-Address ");
             System.out.println("---------------------------------------------");
             System.out.println("UPDATE=ENTRIES: Type Add-By-Index-Main ");
+            System.out.println("---------------------------------------------");
+            System.out.println("UPDATE=ENTRIES: Type Call-Info ");
             System.out.println("---------------------------------------------");
             System.out.println("SHOW-IN-ORDER: Type Show ");
             // System.out.println("EXIT: ");
@@ -321,6 +325,19 @@ public class Display {
                     default:
                         System.out.println("Invalid Character! ");
                 }
+            } else if (directions.equals("Call-Info")) {
+                Scanner scanner = new Scanner(System.in);
+
+                System.out.println("-----------------------");
+                System.out.println("Type Call-Address: ");
+                System.out.println("-----------------------");
+                String x = scanner.nextLine();
+
+                System.out.println("------------------------");
+                System.out.println("Type Call-Name: ");
+                System.out.println("------------------------");
+                String y = scanner.nextLine();
+
             }
 
             else if (directions.equals("Show")) {
