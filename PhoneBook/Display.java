@@ -42,6 +42,8 @@ public class Display {
             System.out.println("---------------------------------------------");
             System.out.println("UPDATE=ENTRIES: Type Call-Info ");
             System.out.println("---------------------------------------------");
+            System.out.println("UPDATE=ENTRIES: Type Valid ");
+            System.out.println("---------------------------------------------");
             System.out.println("SHOW-IN-ORDER: Type Show ");
             System.out.println("---------------------------------------------");
 
@@ -371,7 +373,9 @@ public class Display {
                     if (callAdd.equals(address.get(i))) {
                         System.out.println(Objects);
                         System.out.println(person);
+                        callAddress.info = "Your Program has been updated!";
                         callAddress.getAddress();
+
                     }
 
                 }
@@ -399,6 +403,9 @@ public class Display {
 
                 }
 
+            } else if (directions.equals("Valid")) {
+                ValidEntry valid = new ValidEntry();
+                valid.isValid();
             }
 
             else if (directions.equals("Show")) {
