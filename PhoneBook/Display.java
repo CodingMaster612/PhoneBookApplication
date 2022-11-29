@@ -172,6 +172,7 @@ public class Display {
                     }
                     switch (str) {
                         case "First-Name":
+
                             System.out.println("Element Info : " + Objects.get(i));
                             break;
                         case "Last-Name":

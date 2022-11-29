@@ -31,3 +31,14 @@ create a Person class and a Address class
 //add list<PErson> getPhoneBook(){
     
 }
+
+//To:Do: search by name then get address from list address that equals the name information
+
+1. create person list 
+2. create object : Person person Person();
+3. for loop to loop through person list
+4. for loop to loop to address List
+5. call the person class
+6. call name the print out the address list 
+
+7. use inheritance in java program
