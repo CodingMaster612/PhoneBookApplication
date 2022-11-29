@@ -327,17 +327,27 @@ public class Display {
                 }
             } else if (directions.equals("Call-Info")) {
                 Scanner scanner = new Scanner(System.in);
+                Address callAddress = new Address();
+                Person callPerson = new Person();
 
                 System.out.println("-----------------------");
                 System.out.println("Type Call-Address: ");
                 System.out.println("-----------------------");
-                String x = scanner.nextLine();
+                String callAdd = scanner.nextLine();
+
+                switch (callAdd) {
+                    case "Call":
+
+                }
 
                 System.out.println("------------------------");
                 System.out.println("Type Call-Name: ");
                 System.out.println("------------------------");
-                String y = scanner.nextLine();
+                String callName = scanner.nextLine();
 
+                switch (callName) {
+                    case "Call":
+                }
             }
 
             else if (directions.equals("Show")) {
