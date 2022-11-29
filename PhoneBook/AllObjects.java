@@ -11,6 +11,7 @@ public class AllObjects {
     private String state;
     private String phoneNumber;
     private String zip;
+    private String valid;
 
     List<String> Objects = new ArrayList<>();
 
@@ -19,7 +20,7 @@ public class AllObjects {
     }
 
     public AllObjects(String firstName, String lastName, String fullName, String city, String state, String zip,
-            String phoneNumber) {
+            String phoneNumber, String valid) {
         super();
         this.firstName = firstName;
         this.lastName = lastName;
@@ -28,6 +29,15 @@ public class AllObjects {
         this.state = state;
         this.zip = zip;
         this.phoneNumber = phoneNumber;
+        this.valid = valid;
+    }
+
+    public String getValid() {
+        return valid;
+    }
+
+    public void setValid(String valid) {
+        this.valid = valid;
     }
 
     public String getLastName() {

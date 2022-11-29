@@ -404,8 +404,31 @@ public class Display {
                 }
 
             } else if (directions.equals("Valid")) {
-                ValidEntry valid = new ValidEntry();
-                valid.isValid();
+                do {
+
+                    AllObjects obj = new AllObjects();
+
+                    Scanner valid = new Scanner(System.in);
+                    System.out.println("Enter the Whole address to see if the entry is valid: ");
+                    String str = valid.nextLine();
+
+                    if (Objects.contains(str)) {
+                        System.out.println("Valid Answer");
+                        obj.setValid(str);
+
+                    } else if (str.equals("q")) {
+                        break;
+                    }
+
+                    else {
+                        System.out.println("Not Valid");
+                    }
+
+                    // store in a list or array only valid answers
+                    System.out.println(Objects.toString());
+
+                } while (!directions.equals("q"));
+
             }
 
             else if (directions.equals("Show")) {
