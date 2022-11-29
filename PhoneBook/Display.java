@@ -358,8 +358,9 @@ public class Display {
 
             else if (directions.equals("Call-Info")) {
                 Scanner scanner = new Scanner(System.in);
-                Address callAddress = new Address();
-                Person callPerson = new Person();
+                // Address callAddress = new Address();
+                // Person callPerson = new Person();
+                AddressClass callAddress = new AddressClass();
 
                 System.out.println("-----------------------");
                 System.out.println("Type Call-Address: ");
@@ -370,6 +371,7 @@ public class Display {
                     if (callAdd.equals(address.get(i))) {
                         System.out.println(Objects);
                         System.out.println(person);
+                        callAddress.getAddress();
                     }
 
                 }
@@ -381,6 +383,7 @@ public class Display {
                     if (call.equals(person.get(j))) {
                         System.out.println(Objects);
                         System.out.println(address);
+
                     }
 
                 }

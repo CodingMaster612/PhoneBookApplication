@@ -43,3 +43,5 @@ create a Person class and a Address class
 
 7. use inheritance in java program
 8. add person list type add person 
+
+// add src.close()
