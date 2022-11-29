@@ -41,7 +41,7 @@ public class Display {
             System.out.println("UPDATE=ENTRIES: Type Call-Info ");
             System.out.println("---------------------------------------------");
             System.out.println("SHOW-IN-ORDER: Type Show ");
-            // System.out.println("EXIT: ");
+            System.out.println("---------------------------------------------");
 
             directions = console.nextLine();
 

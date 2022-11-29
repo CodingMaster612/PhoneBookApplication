@@ -1,5 +1,5 @@
 package PhoneBook;
 
-public class Inherit {
+public class Objects {
 
 }
