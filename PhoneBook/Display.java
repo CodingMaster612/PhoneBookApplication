@@ -32,7 +32,9 @@ public class Display {
             System.out.println("---------------------------------------------");
             System.out.println("UPDATE=ENTRIES: Type update ");
             System.out.println("---------------------------------------------");
-            System.out.println("UPDATE=ENTRIES: Type Add-By-Index ");
+            System.out.println("UPDATE=ENTRIES: Type Add-By-Index-Address ");
+            System.out.println("---------------------------------------------");
+            System.out.println("UPDATE=ENTRIES: Type Add-By-Index-Main ");
             System.out.println("---------------------------------------------");
             System.out.println("SHOW-IN-ORDER: Type Show ");
             // System.out.println("EXIT: ");
@@ -124,11 +126,17 @@ public class Display {
                 Address add = new Address();
 
                 Scanner scanner = new Scanner(System.in);
-                System.out.println("Enter A Address");
-                String items = scanner.nextLine();
+                System.out.println("Enter A zip code: ");
+                String zipCode = scanner.nextLine();
 
-                address.add(items);
-                add.setAddress(items);
+                address.add(zipCode);
+                add.setAddress(zipCode);
+
+                System.out.println("Enter State: ");
+                String state = scanner.nextLine();
+
+                address.add(state);
+                add.setAddress(state);
 
                 // address.add(0, items);
                 // add teh ability to add things to a certain index
@@ -225,7 +233,7 @@ public class Display {
                 String up = update.nextLine();
                 System.out.println("Your information has been updated");
                 Objects.add(new String(up));
-            } else if (directions.equals("Add-By-Index")) {
+            } else if (directions.equals("Add-By-Index-Address")) {
                 Scanner X = new Scanner(System.in);
                 System.out.println("Enter Index: ");
                 String index = X.nextLine();
@@ -267,6 +275,51 @@ public class Display {
                     address.add(6, index);
                 }
 
+            } else if (directions.equals("Add-By-Index-Main")) {
+                Scanner y = new Scanner(System.in);
+                System.out.println("Enter Index: ");
+                String indexed = y.nextLine();
+
+                switch (indexed) {
+                    case "Zero":
+                        System.out.println("Enter to add info to index 0");
+                        indexed = y.nextLine();
+                        Objects.add(0, indexed);
+                        break;
+                    case "One":
+                        System.out.println("Enter to add info to index 1");
+                        indexed = y.nextLine();
+                        Objects.add(1, indexed);
+                        break;
+                    case "Two":
+                        System.out.println("Enter to add info to index 2");
+                        indexed = y.nextLine();
+                        Objects.add(2, indexed);
+                        break;
+                    case "Three":
+                        System.out.println("Enter to add info to index 3");
+                        indexed = y.nextLine();
+                        Objects.add(3, indexed);
+                        break;
+                    case "Four":
+                        System.out.println("Enter to add info to index 4");
+                        indexed = y.nextLine();
+                        Objects.add(4, indexed);
+                        break;
+                    case "Five":
+                        System.out.println("Enter to add info to index 5");
+                        indexed = y.nextLine();
+                        Objects.add(5, indexed);
+                        break;
+                    case "Six":
+                        System.out.println("Enter to add info to index 6");
+                        indexed = y.nextLine();
+                        Objects.add(6, indexed);
+                        break;
+
+                    default:
+                        System.out.println("Invalid Character! ");
+                }
             }
 
             else if (directions.equals("Show")) {
