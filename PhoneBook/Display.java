@@ -17,7 +17,7 @@ public class Display {
 
         while (true) {
             Scanner console = new Scanner(System.in);
-
+            System.out.println("---------------------------------------------");
             System.out.println("Please enter your selection: (q to Quit): ");
             System.out.println("---------------------------------------------");
             System.out.println("ADD-ENTRIES: Type Add");
@@ -29,6 +29,8 @@ public class Display {
             System.out.println("DELETE-ENTRIES: Type delete");
             System.out.println("---------------------------------------------");
             System.out.println("DELETE-ENTRIES: Type deleted-address");
+            System.out.println("---------------------------------------------");
+            System.out.println("DELETE-ENTRIES: Type deleted-Person");
             System.out.println("---------------------------------------------");
             System.out.println("UPDATE=ENTRIES: Type update ");
             System.out.println("---------------------------------------------");
@@ -375,15 +377,25 @@ public class Display {
                 System.out.println("Type Call-Person: ");
                 System.out.println("-----------------------");
                 String call = scanner.nextLine();
-                for (int j = 0; j < address.size(); j++) {
-                    if (call.equals(address.get(j))) {
+                for (int j = 0; j < person.size(); j++) {
+                    if (call.equals(person.get(j))) {
                         System.out.println(Objects);
                         System.out.println(address);
                     }
 
                 }
+                System.out.println("-----------------------");
+                System.out.println("Type Call-Main: ");
+                System.out.println("-----------------------");
+                String callMain = scanner.nextLine();
+                for (int k = 0; k < Objects.size(); k++) {
+                    if (callMain.equals(Objects.get(k))) {
+                        System.out.println(person);
+                        System.out.println(address);
+                    }
 
-                // Person class
+                }
+
             }
 
             else if (directions.equals("Show")) {
