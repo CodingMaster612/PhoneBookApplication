@@ -228,7 +228,18 @@ public class Display {
                     address.remove(items);
 
                 }
-                System.out.println(address.toString());
+                System.out.println("New list: " + address.toString());
+            }
+
+            else if (directions.equals("deleted-Person")) {
+                Scanner p = new Scanner(System.in);
+                System.out.println("Choose what item to delete");
+                String pero = p.nextLine();
+
+                for (int r = 0; r < person.size(); r++) {
+                    person.remove(pero);
+                }
+                System.out.println("New list: " + person.toString());
             }
 
             else if (directions.equals("update")) {
