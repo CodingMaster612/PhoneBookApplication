@@ -335,18 +335,11 @@ public class Display {
                 System.out.println("-----------------------");
                 String callAdd = scanner.nextLine();
 
-                switch (callAdd) {
-                    case "Call":
+                for (int i = 0; i < address.size(); i++) {
+                    if (callAdd.equals(address.get(i))) {
+                        System.out.println("test");
+                    }
 
-                }
-
-                System.out.println("------------------------");
-                System.out.println("Type Call-Name: ");
-                System.out.println("------------------------");
-                String callName = scanner.nextLine();
-
-                switch (callName) {
-                    case "Call":
                 }
             }
 
