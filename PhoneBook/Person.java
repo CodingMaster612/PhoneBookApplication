@@ -3,6 +3,7 @@ package PhoneBook;
 import java.util.Scanner;
 
 public class Person {
+    private String person;
     private String firstName;
     private String lastName;
 
@@ -15,6 +16,10 @@ public class Person {
         this.firstName = firstName;
         this.lastName = lastName;
 
+    }
+
+    public void setPerson(String person) {
+        this.person = person;
     }
 
     public String getFirstName() {
@@ -34,7 +39,6 @@ public class Person {
     }
 
     public String toString() {
-        return "Idenity:[FirstName] " + firstName + "[LastName] " + lastName;
+        return firstName + lastName;
     }
-
 }

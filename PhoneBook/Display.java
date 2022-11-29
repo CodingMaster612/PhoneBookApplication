@@ -1,11 +1,9 @@
 package PhoneBook;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+
 import java.util.List;
 import java.util.Scanner;
-
-import javax.xml.transform.Source;
 
 public class Display {
     public static void main(String[] args) {
@@ -15,7 +13,7 @@ public class Display {
 
         List<String> address = new ArrayList<>();
 
-        // add list person
+        List<String> person = new ArrayList<>();
 
         while (true) {
             Scanner console = new Scanner(System.in);
@@ -37,6 +35,8 @@ public class Display {
             System.out.println("UPDATE=ENTRIES: Type Add-By-Index-Address ");
             System.out.println("---------------------------------------------");
             System.out.println("UPDATE=ENTRIES: Type Add-By-Index-Main ");
+            System.out.println("---------------------------------------------");
+            System.out.println("UPDATE=ENTRIES: Type Add-Person");
             System.out.println("---------------------------------------------");
             System.out.println("UPDATE=ENTRIES: Type Call-Info ");
             System.out.println("---------------------------------------------");
@@ -325,7 +325,25 @@ public class Display {
                     default:
                         System.out.println("Invalid Character! ");
                 }
-            } else if (directions.equals("Call-Info")) {
+
+            } else if (directions.equals("Add-Person")) {
+                Person persons = new Person();
+
+                Scanner scanner = new Scanner(System.in);
+                System.out.println("Enter A First Name ");
+                String firstPerson = scanner.nextLine();
+                person.add(firstPerson);
+                persons.setFirstName(firstPerson);
+
+                System.out.println("Enter Last Name: ");
+                String lastPerson = scanner.nextLine();
+                person.add(lastPerson);
+                persons.setLastName(lastPerson);
+
+                System.out.println(person.toString());
+            }
+
+            else if (directions.equals("Call-Info")) {
                 Scanner scanner = new Scanner(System.in);
                 Address callAddress = new Address();
                 Person callPerson = new Person();
@@ -337,10 +355,24 @@ public class Display {
 
                 for (int i = 0; i < address.size(); i++) {
                     if (callAdd.equals(address.get(i))) {
-                        System.out.println("test");
+                        System.out.println(Objects);
+                        System.out.println(person);
                     }
 
                 }
+                System.out.println("-----------------------");
+                System.out.println("Type Call-Person: ");
+                System.out.println("-----------------------");
+                String call = scanner.nextLine();
+                for (int j = 0; j < address.size(); j++) {
+                    if (call.equals(address.get(j))) {
+                        System.out.println(Objects);
+                        System.out.println(address);
+                    }
+
+                }
+
+                // Person class
             }
 
             else if (directions.equals("Show")) {
@@ -354,6 +386,9 @@ public class Display {
 
                     System.out.println("Object Entry For Address: " + address.get(j));
 
+                }
+                for (int k = 0; k < person.size(); k++) {
+                    System.out.println("Object Entry for Person " + person.get(k));
                 }
             }
 

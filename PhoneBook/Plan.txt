@@ -42,3 +42,4 @@ create a Person class and a Address class
 6. call name the print out the address list 
 
 7. use inheritance in java program
+8. add person list type add person 
