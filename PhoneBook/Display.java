@@ -40,9 +40,9 @@ public class Display {
             System.out.println("---------------------------------------------");
             System.out.println("UPDATE=ENTRIES: Type Add-Person");
             System.out.println("---------------------------------------------");
-            System.out.println("UPDATE=ENTRIES: Type Call-Info ");
+            System.out.println("CALL-ENTRIES: Type Call-Info ");
             System.out.println("---------------------------------------------");
-            System.out.println("UPDATE=ENTRIES: Type Valid ");
+            System.out.println("Valid-ENTRIES: Type Valid ");
             System.out.println("---------------------------------------------");
             System.out.println("SHOW-IN-ORDER: Type Show ");
             System.out.println("---------------------------------------------");

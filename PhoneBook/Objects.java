@@ -1,7 +1,5 @@
 package PhoneBook;
 
-import java.util.Scanner;
-
 public class Objects {
 
     String info;
@@ -38,9 +36,6 @@ class PersonClass extends Objects {
 
 class ValidEntry extends Objects {
     public void isValid() {
-        Scanner valid = new Scanner(System.in);
-        System.out.println("Enter the Whole address to see if the entry is valid: ");
-        String address = valid.nextLine();
 
     };
 }

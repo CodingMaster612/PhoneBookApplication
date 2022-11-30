@@ -45,3 +45,6 @@ create a Person class and a Address class
 8. add person list type add person 
 
 // add src.close()
+//add menu header
+//add bonus
+//add the ability to input all information in the list and see if it is valid or not
