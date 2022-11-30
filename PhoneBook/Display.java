@@ -17,7 +17,21 @@ public class Display {
 
         while (true) {
             Scanner console = new Scanner(System.in);
-            System.out.println("---------------------------------------------");
+            System.out.print(
+                    " ██▓███   ██░ ██  ▒█████   ███▄    █ ▓█████  ▄▄▄▄    ▒█████   ▒█████   ██ ▄█▀ ███▄ ▄███▓▓█████  ███▄    █  █    ██");
+            System.out.print(
+                    "▓██░  ██▒▓██░ ██▒▒██▒  ██▒ ██ ▀█   █ ▓█   ▀ ▓█████▄ ▒██▒  ██▒▒██▒  ██▒ ██▄█▒ ▓██▒▀█▀ ██▒▓█   ▀  ██ ▀█   █  ██  ▓██▒");
+            System.out.print(
+                    "▓██░ ██▓▒▒██▀▀██░▒██░  ██▒▓██  ▀█ ██▒▒███   ▒██▒ ▄██▒██░  ██▒▒██░  ██▒▓███▄░ ▓██    ▓██░▒███   ▓██  ▀█ ██▒▓██  ▒██░");
+            System.out.print(
+                    "▒██▄█▓▒ ▒░▓█ ░██ ▒██   ██░▓██▒  ▐▌██▒▒▓█  ▄ ▒██░█▀  ▒██   ██░▒██   ██░▓██ █▄ ▒██    ▒██ ▒▓█  ▄ ▓██▒  ▐▌██▒▓▓█  ░██░");
+            System.out.print(
+                    "▒██▒ ░  ░░▓█▒░██▓░ ████▓▒░▒██░   ▓██░░▒████▒░▓█  ▀█▓░ ████▓▒░░ ████▓▒░▒██▒ █▄▒██▒   ░██▒░▒████▒▒██░   ▓██░▒▒█████▓ ");
+            System.out.print(
+                    "▒▓▒░ ░  ░ ▒ ░░▒░▒░ ▒░▒░▒░ ░ ▒░   ▒ ▒ ░░ ▒░ ░░▒▓███▀▒░ ▒░▒░▒░ ░ ▒░▒░▒░ ▒ ▒▒ ▓▒░ ▒░   ░  ░░░ ▒░ ░░ ▒░   ▒ ▒ ░▒▓▒ ▒ ▒ ");
+            System.out.println(
+                    "░▒ ░      ▒ ░▒░ ░  ░ ▒ ▒░ ░ ░░   ░ ▒░ ░ ░  ░▒░▒   ░   ░ ▒ ▒░   ░ ▒ ▒░ ░ ░▒ ▒░░  ░      ░ ░ ░  ░░ ░░   ░ ▒░░░▒░ ░ ░ ");
+
             System.out.println("Please enter your selection: (q to Quit): ");
             System.out.println("---------------------------------------------");
             System.out.println("ADD-ENTRIES: Type Add");
@@ -413,7 +427,9 @@ public class Display {
                     if (Objects.contains(str) || address.contains(str) || person.contains(str)) {
                         System.out.println("Valid Answer");
 
-                    } else if (str.equals("q")) {
+                    }
+
+                    else if (str.equals("q")) {
                         break;
                     }
 
