@@ -38,8 +38,6 @@ public class Display {
             System.out.println("---------------------------------------------");
             System.out.println("ADD-ENTRIES: Type Add-Address");
             System.out.println("---------------------------------------------");
-            System.out.println("SEARCH-ENTRIES: Type Search");
-            System.out.println("---------------------------------------------");
             System.out.println("DELETE-ENTRIES: Type delete");
             System.out.println("---------------------------------------------");
             System.out.println("DELETE-ENTRIES: Type deleted-address");
@@ -172,64 +170,6 @@ public class Display {
 
                 System.out.println(address.toString());
 
-            }
-
-            else if (directions.equals("Search")) {
-
-                Scanner search = new Scanner(System.in);
-                System.out.println("Choose what element to Search Type Search-Start: ");
-                String str = search.nextLine();
-
-                for (int i = 0; i < Objects.size(); i++) {
-                    if (str.equals("Search-Start")) {
-
-                        System.out.println("Enter to choose the desired information: ");
-                        System.out.println("????????????????????????????????????????????");
-                        System.out.println(": Type Search First-Name");
-                        System.out.println("---------------------------------------------");
-                        System.out.println(": Type Search Last-name");
-                        System.out.println("---------------------------------------------");
-                        System.out.println(": Type Search City");
-                        System.out.println("---------------------------------------------");
-                        System.out.println(": Type Search State ");
-                        System.out.println("---------------------------------------------");
-                        System.out.println(": Type Search Zip ");
-                        System.out.println("---------------------------------------------");
-                        System.out.println(": Type Search PhoneNumber");
-                        System.out.println("???????????????????????????????????????????");
-                        str = search.nextLine();
-                    }
-                    switch (str) {
-                        case "First-Name":
-
-                            System.out.println("Element Info : " + Objects.get(i));
-                            break;
-                        case "Last-Name":
-                            System.out.println("Element Info : " + Objects.get(i));
-                            break;
-                        case "City":
-                            System.out.println("Element Info : " + Objects.get(i));
-                            break;
-                        case "State":
-                            System.out.println("Element Info : " + Objects.get(i));
-                            break;
-
-                        case "Zip":
-                            System.out.println("Element Info : " + Objects.get(i));
-                            break;
-
-                        case "PhoneNumber":
-                            System.out.println("Element Info : " + Objects.get(i));
-                            break;
-
-                        default:
-                            for (int j = 0; j < Objects.size(); j++) {
-                                System.out.println(Objects.get(i) + " Invalid Key word ");
-                            }
-
-                    }
-
-                }
             }
 
             else if (directions.equals("delete")) {
