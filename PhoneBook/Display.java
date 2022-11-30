@@ -17,17 +17,17 @@ public class Display {
 
         while (true) {
             Scanner console = new Scanner(System.in);
-            System.out.print(
+            System.out.println(
                     " ██▓███   ██░ ██  ▒█████   ███▄    █ ▓█████  ▄▄▄▄    ▒█████   ▒█████   ██ ▄█▀ ███▄ ▄███▓▓█████  ███▄    █  █    ██");
-            System.out.print(
+            System.out.println(
                     "▓██░  ██▒▓██░ ██▒▒██▒  ██▒ ██ ▀█   █ ▓█   ▀ ▓█████▄ ▒██▒  ██▒▒██▒  ██▒ ██▄█▒ ▓██▒▀█▀ ██▒▓█   ▀  ██ ▀█   █  ██  ▓██▒");
-            System.out.print(
+            System.out.println(
                     "▓██░ ██▓▒▒██▀▀██░▒██░  ██▒▓██  ▀█ ██▒▒███   ▒██▒ ▄██▒██░  ██▒▒██░  ██▒▓███▄░ ▓██    ▓██░▒███   ▓██  ▀█ ██▒▓██  ▒██░");
-            System.out.print(
+            System.out.println(
                     "▒██▄█▓▒ ▒░▓█ ░██ ▒██   ██░▓██▒  ▐▌██▒▒▓█  ▄ ▒██░█▀  ▒██   ██░▒██   ██░▓██ █▄ ▒██    ▒██ ▒▓█  ▄ ▓██▒  ▐▌██▒▓▓█  ░██░");
-            System.out.print(
+            System.out.println(
                     "▒██▒ ░  ░░▓█▒░██▓░ ████▓▒░▒██░   ▓██░░▒████▒░▓█  ▀█▓░ ████▓▒░░ ████▓▒░▒██▒ █▄▒██▒   ░██▒░▒████▒▒██░   ▓██░▒▒█████▓ ");
-            System.out.print(
+            System.out.println(
                     "▒▓▒░ ░  ░ ▒ ░░▒░▒░ ▒░▒░▒░ ░ ▒░   ▒ ▒ ░░ ▒░ ░░▒▓███▀▒░ ▒░▒░▒░ ░ ▒░▒░▒░ ▒ ▒▒ ▓▒░ ▒░   ░  ░░░ ▒░ ░░ ▒░   ▒ ▒ ░▒▓▒ ▒ ▒ ");
             System.out.println(
                     "░▒ ░      ▒ ░▒░ ░  ░ ▒ ▒░ ░ ░░   ░ ▒░ ░ ░  ░▒░▒   ░   ░ ▒ ▒░   ░ ▒ ▒░ ░ ░▒ ▒░░  ░      ░ ░ ░  ░░ ░░   ░ ▒░░░▒░ ░ ░ ");
@@ -71,6 +71,13 @@ public class Display {
             else if (directions.equals("Add")) {
 
                 Scanner con = new Scanner(System.in);
+
+                System.out.println(" .--.    .-.   .-.       .-..-.");
+                System.out.println(": .; :   : :   : :       : `' :");
+                System.out.println(":    : .-' : .-' : _____ : .. : .--. ,-.,-..-..-.");
+                System.out.println(": :: :' .; :' .; ::_____:: :; :' '_.': ,. :: :; :");
+                System.out.println(":_;:_;`.__.'`.__.'       :_;:_;`.__.':_;:_;`.__.'");
+
                 System.out.println("Directions: To Add a certain Object type in the desired keyword");
 
                 System.out.println("###############################################");
